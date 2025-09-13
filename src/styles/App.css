@@ -591,7 +591,7 @@ section:nth-child(odd) {
     }
 
     .hero {
-        padding: 6rem 1.5rem 3rem 1.5rem;
+        padding: 8rem 1.5rem 3rem 1.5rem; /* Increased top padding for logo space */
         gap: 3rem;
         margin-top: 2rem;
         position: relative;
@@ -709,7 +709,7 @@ section:nth-child(odd) {
     }
 
     .hero {
-        padding: 6rem 1rem 3rem 1rem;
+        padding: 8rem 1rem 3rem 1rem; /* Increased top padding for logo space */
         gap: 2.5rem;
         margin-top: 2rem;
         width: 100%;
@@ -875,48 +875,11 @@ body {
     touch-action: manipulation;
 }
 
-/* Bottom Translucent Overlay Effect */
-.bottom-blur-overlay {
-    position: fixed !important;
-    bottom: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    width: 100vw !important;
-    height: 120px !important;
-    background: linear-gradient(
-        to top,
-        rgba(0, 0, 0, 0.85) 0%,
-        rgba(0, 0, 0, 0.7) 20%,
-        rgba(0, 0, 0, 0.5) 40%,
-        rgba(0, 0, 0, 0.3) 60%,
-        rgba(0, 0, 0, 0.15) 80%,
-        rgba(0, 0, 0, 0) 100%
-    ) !important;
-    backdrop-filter: blur(12px) saturate(180%) !important;
-    -webkit-backdrop-filter: blur(12px) saturate(180%) !important;
-    pointer-events: none !important;
-    z-index: 999999 !important;
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-}
+/* Bottom Translucent Overlay Effect - Now handled by DynamicBottomBlur component */
 
 /* Removed additional overlay to fix double blur bars */
 
-/* Fallback for browsers that don't support backdrop-filter */
-@supports not (backdrop-filter: blur(1px)) {
-    .bottom-blur-overlay {
-        background: linear-gradient(
-            to top,
-            rgba(0, 0, 0, 0.9) 0%,
-            rgba(0, 0, 0, 0.8) 20%,
-            rgba(0, 0, 0, 0.6) 40%,
-            rgba(0, 0, 0, 0.4) 60%,
-            rgba(0, 0, 0, 0.2) 80%,
-            rgba(0, 0, 0, 0) 100%
-        ) !important;
-    }
-}
+/* Fallback handling now in DynamicBottomBlur component */
 
 /* Enhanced smooth scrolling for all elements */
 * {
@@ -1015,7 +978,7 @@ body {
     }
     
     .hero {
-        padding: 5rem 0.5rem 2rem 0.5rem;
+        padding: 7rem 0.5rem 2rem 0.5rem; /* Increased top padding for logo space */
         margin-top: 1.5rem;
     }
 

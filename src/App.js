@@ -9,6 +9,7 @@ import ScrollToTop from './components/ScrollToTop';
 import ProgressBar from './components/ProgressBar';
 import Notification from './components/Notification';
 import DarkVeil from './components/DarkVeil';
+import DynamicBottomBlur from './components/DynamicBottomBlur';
 import useParallax from './hooks/useParallax';
 import useNotification from './hooks/useNotification';
 
@@ -58,8 +59,8 @@ function App() {
         )}
       </div>
 
-      {/* Static bottom blur overlay */}
-      <div className="bottom-blur-overlay" />
+      {/* Dynamic bottom blur overlay */}
+      <DynamicBottomBlur />
     </div>
   );
 }
