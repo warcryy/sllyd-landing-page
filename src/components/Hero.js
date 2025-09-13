@@ -14,7 +14,7 @@ const Hero = ({ showNotification }) => {
     const heroTitle = heroTitleRef.current;
     if (!heroTitle) return;
 
-    const text = 'Don’t Swipe. Just sllyd.';
+    const text = 'Find Love Where You Are';
     let i = 0;
     let isDeleting = false;
 
@@ -119,14 +119,8 @@ const Hero = ({ showNotification }) => {
       </div>
       <div className="hero-image" ref={heroImageRef} style={{ position: 'relative' }}>
         <img 
-          src="/find-love-where-u-are.jpg" 
+          src={`${process.env.PUBLIC_URL}/find-love-where-u-are.jpg`} 
           alt="Find love where you are" 
-          style={{
-            maxWidth: '85%',
-            height: 'auto',
-            borderRadius: '18px',
-            display: 'block'
-          }}
         />
       </div>
     </section>

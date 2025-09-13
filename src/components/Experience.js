@@ -9,7 +9,7 @@ const Experience = () => {
         <p className="section-text">No more endless swiping. Meet people who share your lifestyle and favorite spots.</p>
       </div>
       <div className="experience-image">
-        <img src="/experience-dating-differently.jpg" alt="Experience dating differently" />
+        <img src={`${process.env.PUBLIC_URL}/experience-dating-differently.jpg`} alt="Experience dating differently" />
       </div>
     </section>
   );

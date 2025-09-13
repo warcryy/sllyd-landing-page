@@ -60,7 +60,7 @@ const Waitlist = ({ showNotification }) => {
         </div>
       </div>
       <div className="waitlist-image">
-        <img src="/be-among-the-first.jpg" alt="Be among the first" />
+        <img src={`${process.env.PUBLIC_URL}/be-among-the-first.jpg`} alt="Be among the first" />
       </div>
     </section>
   );

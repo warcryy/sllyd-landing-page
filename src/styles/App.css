@@ -97,9 +97,9 @@ html {
 }
 
 .logo-image {
-    height: 100px;
+    height: 200px;
     width: auto;
-    max-width: 350px;
+    max-width: 700px;
     /* High-quality image rendering */
     image-rendering: -webkit-optimize-contrast;
     image-rendering: -moz-crisp-edges;
@@ -126,8 +126,8 @@ html {
     }
     
     .logo-image {
-        height: 80px;
-        max-width: 250px;
+        height: 160px;
+        max-width: 560px;
     }
 }
 
@@ -138,8 +138,8 @@ html {
     }
     
     .logo-image {
-        height: 70px;
-        max-width: 200px;
+        height: 140px;
+        max-width: 490px;
     }
 }
 
@@ -160,6 +160,7 @@ html {
     padding: 0 2rem;
     max-width: 1400px;
     margin: 0 auto;
+    gap: 4rem; /* Same gap as about section */
     position: relative;
     overflow: visible; /* allow hero image to rotate without being clipped */
 }
@@ -255,7 +256,7 @@ html {
     flex: 1;
     position: relative;
     margin-left: 2rem; /* Add spacing from content */
-    max-width: 1400px; /* Make image slightly smaller */
+    max-width: 500px; /* Same as about image */
     padding-top: 100px; /* Add 10px padding from top */
 }
 
@@ -900,23 +901,7 @@ body {
     opacity: 1 !important;
 }
 
-/* Additional overlay for extra visibility */
-.bottom-blur-overlay::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    background: linear-gradient(
-        to top,
-        rgba(255, 255, 255, 0.1) 0%,
-        rgba(255, 255, 255, 0.05) 50%,
-        rgba(255, 255, 255, 0) 100%
-    );
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-}
+/* Removed additional overlay to fix double blur bars */
 
 /* Fallback for browsers that don't support backdrop-filter */
 @supports not (backdrop-filter: blur(1px)) {
