@@ -72,3 +72,4 @@ const CSSBlur = ({ variation = 0, className = '' }) => {
 
 export default CSSBlur;
 
+

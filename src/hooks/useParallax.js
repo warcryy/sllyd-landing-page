@@ -90,3 +90,4 @@ const useParallax = () => {
 
 export default useParallax;
 
+

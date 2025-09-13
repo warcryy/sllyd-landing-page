@@ -30,3 +30,4 @@ If you don't have these models, the component will still load but may show conso
 2. Add the 3D model files when available
 3. Or create simple primitive shapes exported as GLB files
 
+

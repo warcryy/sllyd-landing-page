@@ -54,3 +54,4 @@ Once you have the models:
 ✅ **Positioning**: Models should be centered at origin (0,0,0)  
 ✅ **Scale**: Reasonable size (1-3 units in each dimension)  
 
+
