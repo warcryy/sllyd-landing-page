@@ -4,7 +4,6 @@ import Logo from './components/Logo';
 import Hero from './components/Hero';
 import About from './components/About';
 import Features from './components/Features';
-import Experience from './components/Experience';
 import Waitlist from './components/Waitlist';
 import ScrollToTop from './components/ScrollToTop';
 import ProgressBar from './components/ProgressBar';
@@ -47,7 +46,6 @@ function App() {
         <Hero showNotification={showNotification} />
         <About />
         <Features />
-        {/* <Experience /> */}
         <Waitlist showNotification={showNotification} />
         <ScrollToTop />
         <ProgressBar />
@@ -59,6 +57,9 @@ function App() {
           />
         )}
       </div>
+
+      {/* Static bottom blur overlay */}
+      <div className="bottom-blur-overlay" />
     </div>
   );
 }
